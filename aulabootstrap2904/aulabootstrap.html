@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trabalhando com Css Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Corrigido o nome do arquivo -->
+  <link rel="stylesheet" href="estilo/gootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Troquei <head> por <header> -->
+  <header class="p-5 mt-4 bg-success text-white rounded">
+    <h1 class="text-center">Minha primeira página com Bootstrap</h1>
+    <p>Redimensione esta página e veja o efeito responsivo do bootstrap</p>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row"></div>
+        <div class="col-lg-6 mr-3 text-bg-primary">
+          <h3>Coluna 1</h3>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-3 mr-3 text-bg-warning">
+          <h3>Coluna 2</h3>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-3 mr-3 text-bg-danger">
+          <h3>Coluna 3</h3>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <form class="oofset-lg-3">
+        <div class="mb-3 mt-3">
+          <label>Nome: <input type='text' class="form-control" placeholder='informe seu nome' name='nome'></label>
+        </div>
+        <div>
+          <label>Idade: <input type='number' class="form-control" name='idade'></label>
+        </div>
+        <input type="submit" value="Envio" class="btn btn-primary">
+      </form>
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

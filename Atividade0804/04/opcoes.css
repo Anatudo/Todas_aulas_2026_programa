@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f8ff; /* Azul claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Título centralizado */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #1e90ff;
+}
+
+/* Container dos links */
+.lista-cursos {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo dos links */
+.lista-cursos a {
+    text-decoration: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+/* Efeito hover */
+.lista-cursos a:hover {
+    background-color: #45a049;
+}

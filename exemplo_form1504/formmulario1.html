@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css"
+    >
+    <title>Exemplo 1 formulari0o</title>
+</head>
+<body>
+    <head class="container">
+        <h1>Formulário de cadastro de cliente</h1>
+    </head>
+    <main class="grind container">
+        <div></div>
+        <form action="post" method="GET">
+            <input type="text" name="nome" placeholder="Informe seu nome: "
+            size="20" maxlength="30"> <br>
+            <input type="text" name="telefone" placeholder="(99) 99999-9999"
+                pattern="\(\d{2\})\d{5}\-d{4}"><br>
+                <label><input type="checkbox" checked name="contato" >Aceita contato</label><br>
+            <fieldset>
+                <label>Tipo de contato</label>
+                <label for="email">E-mail</label>
+                <input type="radio" name="tcontato" value="email" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="radio" name="tcontato" value="email" id="telefone">
+            </fieldset>
+            <select name="uf_nasc">
+                <!--SIMULANDO PLACEHOLDER EM UM SELECT-->
+                <option value="" selected disabled></option>
+                <option value="AC">Acre</option>
+                <option value="RO">Rondônia</option>
+                <option value="MG">Minas gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="OU">Outro</option>
+            </select><br>
+            <textarea name="mensagem" rows="12" cols="80"></textarea>
+            <label for="salario">Salário: </label>
+            <input type="number" name="salario" id="salario" min="0" max="100000"
+                    step="0.01"><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div></div>
+        <a href="../index.html" class="botao">aqui</a>
+        <style>
+            .botao {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #5a2d82, #2d1b4e); /* roxo elegante */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  background: #ffd700;   /* dourado no hover */
+  color: #000;
+  transform: scale(1.05); /* leve aumento ao passar o mouse */
+}
+
+        </style>
+    </main>
+</body>
+</html>
